@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header x-data="{ open: false }" class="header">
+      <!-- Logo -->
+      <div class="header__logo">
+        <img class="img_logo" src="Gmail.png" alt="">
+      </div>
+      <!-- Boton abrir -->
+      <button class="header__button-nav--open" x-on:click="open = true">Abrir</button>
+      <!-- Navegador -->
+      <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+        <!-- Boton cerrar -->
+        <div class="nav__button" x-on:click="open = false">
+          <button class="header__button-nav--close">Cerrar</button>
+        </div>
+        <!-- Menu -->
+        <ul class="nav__ul">
+          <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Portafolio</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Fin Navegador -->
+    </header>
+    <!-- Fin Header -->
+
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>
+
