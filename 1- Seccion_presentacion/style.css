@@ -1,0 +1,35 @@
+.welcome {
+  text-align: center;
+}
+
+.welcome .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.welcome .text-container,
+.welcome .image-container {
+  width: 50%;
+}
+
+.welcome .text-container {
+  text-align: left;
+}
+
+.welcome img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991px) {
+  .welcome .row {
+    flex-direction: column;
+  }
+  
+  .welcome .text-container,
+  .welcome .image-container {
+    width: 100%;
+  }
+}
